@@ -1,0 +1,3 @@
+TASK: write a short explanation of the dataset in plain English. Cover what the data represents (microstructure images and composition of a material), how it was created (synthetically generated for a course), what the inputs are (images and composition values) and what you're trying to predict (thermal conductivity), and finally note that the raw files aren't included in the GitHub repo because of file size.
+Why:
+When someone visits your repo and looks in the data folder and finds it empty, they'll be confused without this explanation. This file answers their questions before they ask. It also shows you understand the data, not just the code.
