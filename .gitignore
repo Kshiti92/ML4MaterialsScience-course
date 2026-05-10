@@ -1,0 +1,6 @@
+AllFiles/
+data/
+*.npy
+results/models/
+__pycache__/
+.ipynb_checkpoints/
