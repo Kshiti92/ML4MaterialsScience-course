@@ -1,5 +1,12 @@
+### ML for Materials Science: Predicting Thermal Conductivity in SiOC Glass Ceramics
+Recording learnings from the course "Machine Learning for Materials Science" by TU Darmstadt.
+A hands-on project applying CNNs and Bayesian optimization to predict and maximise effective thermal conductivity in SiOC glass ceramic nanocomposites — demonstrating a complete structure-property discovery workflow.
 
-Recording learnings from course "Machine Learning for Materials Science" (by TU Darmstadt)
-Task: A title and one-sentence description of what the project is. A project overview explaining the two tasks and how they connect — the CNN learns the relationship between structure and property, and then Bayesian optimization uses that to find the best composition. A repository structure section where you just list the folders and what's in them. A how to run section with the simple steps: clone the repo, install requirements, open notebooks in order. A results section where you paste in one or two of your key figures (your prediction accuracy plot and your Bayesian optimization convergence plot). And finally a short what I learned paragraph in your own words — 3 to 5 sentences about what clicked for you, what surprised you, and what you'd explore if you had more time.
-Why:
-This is the first thing anyone sees when they visit your GitHub page. GitHub automatically renders it as a nicely formatted page. Think of it as a one-page CV for the project. The "what I learned" section is particularly important — it shows reflection and genuine engagement, and it's what turns a code dump into a portfolio piece.
+#### Project Overview
+The material system studied is SiOC glass ceramics — a nanocomposite with three interacting phases whose composition directly controls its effective thermal conductivity. SiOC is of significant engineering interest due to its high chemical durability, excellent resistance to oxidative and corrosive environments, and high thermal stability.
+The project is structured as two connected tasks:
+##### Task 1 — CNN for Structure-Property Prediction:
+360 computer-generated 3D nanocomposite microstructures (each a 100×100×100 .npy file) were used alongside thermal conductivity values from finite element simulations. After exploratory data analysis — including volume fraction calculation, correlation analysis, and benchmarking with linear regression and a simple neural network — a Convolutional Neural Network (CNN) was trained to learn the relationship between microstructure images and effective thermal conductivity.
+##### Task 2 — Bayesian Optimization for Composition Design:
+Using the structure-property relationship learned by the CNN, Bayesian optimization was applied to search the composition space and identify the composition that maximises thermal conductivity — without needing to run a physical or simulated experiment for every candidate.
+These two tasks form a closed loop: the CNN learns the map, Bayesian optimization exploits it.
